@@ -1,0 +1,16 @@
+[package]
+name = "particle_grid_webgpu"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wgpu = "0.19"
+winit = "0.30"
+bytemuck = { version = "1.4", features = ["derive"] }
+rand = "0.8"
+env_logger = "0.10"
+pollster = "0.3"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
