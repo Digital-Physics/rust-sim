@@ -58,8 +58,8 @@ impl ParticleGrid {
         // .map() transforms each element, .collect() gathers results into a Vec
         let density_choices: Vec<f32> = (3..10).map(|i| i as f32 * 0.05).collect();
         // .choose() picks a random element, .unwrap_or() provides a default if None
-        let density = *density_choices.choose(&mut rng).unwrap_or(&0.3);
-        let radius = *[1usize, 2usize].choose(&mut rng).unwrap_or(&1);
+        let density = *density_choices.choose(&mut rng).unwrap_or(&0.2);
+        let radius = *[1usize, 2usize].choose(&mut rng).unwrap_or(&20);
 
         // Struct construction syntax - field names match the variables
         let params = Params {
